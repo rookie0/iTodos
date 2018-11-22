@@ -1,0 +1,14 @@
+<view style="margin-top: -50px;">
+    <wux-floating-button id="wux-floating-button" buttons="{{ global.buttons }}" bind:click="buttonClicked"/>
+
+    <wux-result fixed icon="{{ {type: null, color: null, size: null} }}" extra="Copyright © {{ year }} J4F."/>
+
+    <wux-white-space size="large"/>
+    <wux-white-space size="large"/>
+
+    <wux-wing-blank size="large">
+        <view style="text-align:center;">
+            <image bindtap="imgTapped" style="height:300px;width:300px;" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/IAdulNpBMqib6xsnEPkCBoc4FQYy1ibThdnXkAibUyxiap9b3LLSKAxaEeCCL3KEG4iciboia6HPWj6VAtkHCvta0Fzyg/0?wx_fmt=jpeg" src="https://mmbiz.qpic.cn/mmbiz_jpg/IAdulNpBMqib6xsnEPkCBoc4FQYy1ibThdnXkAibUyxiap9b3LLSKAxaEeCCL3KEG4iciboia6HPWj6VAtkHCvta0Fzyg/0?wx_fmt=jpeg"/>
+        </view>
+    </wux-wing-blank>
+</view>

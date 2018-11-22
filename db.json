@@ -1,0 +1,18 @@
+{
+    "todos": {
+        "_id": "auto id",
+        "_openid": "user openid",
+        "name": "todo name",
+        "remark": "remark",
+        "icon": "icon",
+        "color": "color",
+        "created_at": "create time",
+        "updated_at": "update time",
+        "deleted_at": "delete time"
+    },
+    "feedback": {
+        "_id": "auto id",
+        "_openid": "",
+        "content": ""
+    }
+}

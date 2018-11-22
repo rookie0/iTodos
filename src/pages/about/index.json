@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "反馈说明",
+    "usingComponents": {
+        "wux-floating-button": "/wux/floating-button/index",
+        "wux-result": "/wux/result/index",
+        "wux-white-space": "/wux/white-space/index",
+        "wux-wing-blank": "/wux/wing-blank/index"
+    }
+}

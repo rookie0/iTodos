@@ -1,0 +1,53 @@
+<view class="page">
+    <wux-floating-button id="wux-floating-button" buttons="{{ global.buttons }}" bind:click="buttonClicked"/>
+
+    <wux-white-space/>
+
+    <view class="weui-cells">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+                <input class="weui-input" maxlength="50" placeholder="请输入待办事项" value="{{ item.name }}" id="name" bindinput="inputChanged"/>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells__tips">留空即删除该条</view>
+
+    <wux-white-space size="large"/>
+
+    <view class="weui-cells">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">颜色</view>
+            </view>
+            <view class="weui-cell__bd">
+                <view class="weui-select weui-select_in-select-after" bindtap="colorTapped">
+                    <i style="position:relative;top:6rpx;" type="{{ item.icon }}" size="22" color="{{ item.color }}"/>
+                </view>
+            </view>
+        </view>
+        <navigator url="/pages/icon/index?name={{ item.name }}&icon={{ item.icon }}" class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">图标</view>
+            </view>
+            <view class="weui-cell__bd">
+                <view class="weui-select weui-select_in-select-after">
+                    <i style="position:relative;top:6rpx;" type="{{ item.icon }}" size="22" color="{{ item.color }}"/>
+                </view>
+            </view>
+        </navigator>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <view style="text-align: left;">备注</view>
+                <view style="width:100%;position:relative;min-height:80rpx;color:#808080;font-size:14px;">
+                    <text style="display:block;visibility:hidden;word-break:break-all;">{{ item.remark }}</text>
+                    <textarea class="weui-textarea" value="{{ item.remark }}" style="height:100%;position:absolute;left:0;top:0;overflow-y:hidden;word-break:break-all;" id="remark" maxlength="300" bindinput="inputChanged"/>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <wux-select id="sltColor"/>
+
+    <wux-toptips id="wux-toptips"/>
+
+</view>

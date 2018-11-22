@@ -1,0 +1,27 @@
+<view>
+    <wux-floating-button wux-class="floating-button" id="wux-floating-button" buttons="{{ global.buttons }}" bind:click="buttonClicked"/>
+
+    <wux-notice-bar wx:if="{{ notice }}" loop mode="closable">
+        {{ notice }}
+    </wux-notice-bar>
+
+    <wux-white-space size="large"/>
+    <wux-white-space size="large"/>
+
+    <block wx:if="{{ todos && todos.length > 0 }}">
+        <wux-cell-group name="todos">
+            <block wx:for="{{ todos }}" wx:key="_id">
+                <item title="{{ item.name }}"
+                      label="{{ item.remark }}"
+                      icon="{{ item.icon }}"
+                      color="{{ item.color }}"
+                      is-link
+                      url="/pages/item/index?_id={{ item._id }}"/>
+            </block>
+        </wux-cell-group>
+    </block>
+    <block wx:else>
+        <wux-result icon="{{ {type:'search', color: null} }}" label="空空如也…… 点击右下角 ··· 添加你的待办吧"/>
+    </block>
+
+</view>

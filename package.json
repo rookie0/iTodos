@@ -1,0 +1,13 @@
+{
+  "name": "itodos",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "wux-weapp": "^3.0.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-util": "^3.0.8"
+  }
+}

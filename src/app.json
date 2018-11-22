@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/item/index",
+    "pages/icon/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "iTodos",
+    "navigationBarBackgroundColor": "#e1472f",
+    "backgroundColor": "#f8f8f8"
+  },
+  "debug": true
+}

@@ -1,0 +1,26 @@
+{
+    "navigationBarTitleText": "iTodos",
+    "usingComponents": {
+        "wux-animation-group": "/wux/animation-group/index",
+        "wux-backdrop": "/wux/backdrop/index",
+        "wux-button": "/wux/button/index",
+        "wux-cell": "/wux/cell/index",
+        "wux-cell-group": "/wux/cell-group/index",
+        "wux-checkbox": "/wux/checkbox/index",
+        "wux-checkbox-group": "/wux/checkbox-group/index",
+        "wux-col": "/wux/col/index",
+        "wux-floating-button": "/wux/floating-button/index",
+        "wux-icon": "/wux/icon/index",
+        "wux-notice-bar": "/wux/notice-bar/index",
+        "wux-radio": "/wux/radio/index",
+        "wux-radio-group": "/wux/radio-group/index",
+        "wux-result": "/wux/result/index",
+        "wux-row": "/wux/row/index",
+        "wux-segmented-control": "/wux/segmented-control/index",
+        "wux-select": "/wux/select/index",
+        "wux-white-space": "/wux/white-space/index",
+        "wux-wing-blank": "/wux/wing-blank/index",
+        "item": "/wux/item/index",
+        "i": "/wux/i/index"
+    }
+}

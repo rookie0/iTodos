@@ -1,0 +1,46 @@
+<view class="page">
+    <wux-floating-button id="wux-floating-button" buttons="{{ global.buttons }}" bind:click="buttonClicked"/>
+
+    <view style="position: fixed; top: 0;z-index: 99; width: 100%;">
+        <wux-white-space size="large"/>
+        <wux-cell-group>
+            <item title="{{ name }}"
+                  extra="确定"
+                  icon="{{ icon }}"
+                  is-link
+                  bind:click="onClick"/>
+        </wux-cell-group>
+        <wux-white-space size="large"/>
+        <wux-segmented-control theme="assertive" values="{{ ['Icons', 'Logos'] }}" bind:change="onChange"/>
+    </view>
+
+    <view class="page__bd" style="margin-top: 240rpx;">
+        <wux-tab style="display: {{ display ? 'block' : 'none'}}">
+            <wux-row>
+                <block wx:for="{{ icons }}" wx:key="">
+                    <wux-col span="3">
+                        <view class="cell" id="ion ion-ios-{{ item }}">
+                            <i type="ion ion-ios-{{ item }}" id="ion ion-ios-{{ item }}" bind:tap="onTap"/>
+                            <view class="title">{{ item }}</view>
+                        </view>
+                    </wux-col>
+                </block>
+            </wux-row>
+        </wux-tab>
+
+        <wux-tab style="display: {{ display ? 'none' : 'block'}}">
+            <wux-row>
+                <block wx:for="{{ logos }}" wx:key="">
+                    <wux-col span="3">
+                        <view class="cell" id="fa fa-{{ item }}" bind:tap="onTap">
+                            <i type="fa fa-{{ item }}"/>
+                            <view class="title">{{ item }}</view>
+                        </view>
+                    </wux-col>
+                </block>
+            </wux-row>
+        </wux-tab>
+
+        <wux-white-space size="large"/>
+    </view>
+</view>

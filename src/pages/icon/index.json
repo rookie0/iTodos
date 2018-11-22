@@ -1,0 +1,18 @@
+{
+    "navigationBarTitleText": "选择图标",
+    "usingComponents": {
+        "wux-button": "/wux/button/index",
+        "wux-cell": "/wux/cell/index",
+        "wux-cell-group": "/wux/cell-group/index",
+        "wux-col": "/wux/col/index",
+        "wux-floating-button": "/wux/floating-button/index",
+        "wux-icon": "/wux/icon/index",
+        "wux-row": "/wux/row/index",
+        "wux-segmented-control": "/wux/segmented-control/index",
+        "wux-tab": "/wux/tab/index",
+        "wux-white-space": "/wux/white-space/index",
+        "wux-wing-blank": "/wux/wing-blank/index",
+        "item": "/wux/item/index",
+        "i": "/wux/i/index"
+    }
+}
